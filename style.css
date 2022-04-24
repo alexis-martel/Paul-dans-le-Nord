@@ -1,0 +1,122 @@
+html {
+  background-color: floralwhite;
+}
+
+.sidenav {
+  height: 100%;
+  /* Full-height: remove this if you want "auto" height */
+  width: 200px;
+  /* Set the width of the sidebar */
+  position: fixed;
+  /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 6px 6px 6px;
+  text-decoration: none;
+  font-size: 20px;
+  color: grey;
+  display: block;
+}
+
+/* The navigation menu paragraphs */
+.sidenav p {
+  padding: 6px 6px 6px 6px;
+  text-decoration: none;
+  font-size: 20px;
+  color: floralwhite;
+  display: block;
+}
+
+/* The navigation menu headers */
+.sidenav h1 {
+  padding: 6px 6px 6px 6px;
+  text-decoration: none;
+  font-size: 26px;
+  color: floralwhite;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: floralwhite;
+}
+
+.header {
+  margin-left: 200px;
+  /* Same as the width of the sidebar */
+  background-color: black;
+  text-align: center;
+  padding: 5px;
+}
+
+.header p, h1, h3 {
+  color: floralwhite;
+  padding: 2px;
+}
+
+/* Style page content */
+.main {
+  margin-left: 200px;
+  /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+.footer {
+  margin-left: 200px;
+  /* Same as the width of the sidebar */
+  background-color: black;
+  text-align: center;
+  padding: 5px;
+}
+
+.footer p, h1 {
+  color: floralwhite;
+  padding: 2px;
+}
+
+/* On smaller screens, change the style of the navbar */
+@media screen and (max-width: 600px) {
+  .sidenav {
+    height: auto;
+    width: 100%;
+    position: relative;
+  }
+
+  .sidenav a {
+    font-size: 22px;
+  }
+
+  .sidenav p {
+    font-size: 22px;
+  }
+
+  .sidenav h1 {
+    font-size: 26px;
+  }
+
+  .header {
+    margin-left: 0px;
+    /* Since the navbar is up top */
+  }
+
+  .main {
+    margin-left: 0px;
+    /* Since the navbar is up top */
+  }
+
+  .footer {
+    margin-left: 0px;
+    /* Since the navbar is up top */
+  }
+}
